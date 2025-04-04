@@ -1,0 +1,511 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  line-height: 1.6;
+  margin: 0;
+  padding: 3rem 7rem 0;
+}
+
+header {
+  /* background-color: #f5f5f72d; */
+  padding: 1rem;
+  text-align: center;
+  /* border-bottom: 0.2px solid #dddddd64; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4rem;
+}
+
+header h1 {
+  font-size: 5rem;
+  font-weight: 450;
+  letter-spacing: -1px;
+  margin-bottom: 3rem;
+  line-height: 80px;
+}
+
+header .download-button {
+  border: none;
+  color: white;
+  font-weight: 400;
+  transition: all 0.2s ease;
+}
+
+header .download-icon {
+  width: 16px;
+  height: 16px;
+  filter: brightness(0) invert(1);
+}
+
+.launch-badge {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 15px 26px;
+  border-radius: 50px;
+  font-size: 18px;
+  text-transform: none;
+  letter-spacing: 0.01em;
+  font-weight: 500;
+  animation: slideBadgeIn 0.8s ease-out forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 200;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-weight: 300;
+  font-size: 1.05rem;
+}
+
+section {
+  margin-bottom: 3rem;
+  padding: 2rem 2rem 1rem;
+  border: 1px solid rgb(66, 66, 69);
+  border-radius: 35px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.section-maintitle {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.section-number {
+  font-weight: 600;
+}
+
+.benefits-section {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  flex-wrap: nowrap;
+}
+
+.benefit-card {
+  background-color: #f5f5f72d;
+  border-radius: 25px;
+  padding: 1.5rem;
+  border: 1px solid #9e9e9e;
+  flex: 1;
+  min-width: 0;
+}
+
+.benefit-title {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 0.3rem;
+  color: #b3b3b3;
+}
+
+.benefit-text {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #ffffff;
+  margin: 0;
+}
+
+.storebutton {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  /* margin: 30px auto; */
+  /* max-width: 600px; */
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.icon-circle {
+  background-color: #f5f5f72d;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+  margin: 0;
+}
+
+.icon-circle img,
+.icon-circle svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.download-button {
+  display: flex;
+  align-items: center;
+  background-color: rgb(4, 117, 229);
+  color: #ffffff;
+  border-radius: 35px;
+  padding: 14px 26px;
+  margin-top: 1px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  transition: all 0.2s ease;
+}
+
+.about-style-button {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff1a;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-top: 1px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+  transition: all 0.2s ease;
+}
+
+.register-button {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-top: 1px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+  transition: all 0.2s ease;
+}
+
+/* 
+.download-button:hover {
+  background-color: #ffffff1a;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+} */
+
+.download-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+
+.footer {
+  width: 850px;
+  padding: 20px 0;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 12px;
+  font-weight: 300;
+  color: #ffffff;
+  margin: 0 auto;
+  border: 1px solid rgb(66, 66, 69);
+  border-bottom-color: #000000;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer a:hover {
+  color: #7a7a7a;
+}
+
+/* Image container layout from inline styles */
+.image-container-row {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 1rem 0;
+  flex-wrap: nowrap;
+}
+
+.image-container {
+  flex: 1;
+  min-width: 200px;
+  max-width: 250px;
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+/* Price display */
+.price-display {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 2rem 0;
+  flex-wrap: nowrap;
+  font-size: 5rem;
+  font-weight: 500;
+  background-color: #09f14e37;
+  border-radius: 25px;
+  padding: 1rem;
+  border: 1px solid #09f14fb5;
+  color: #a1eda1;
+  flex: 1;
+  min-width: 0;
+}
+
+/* For mobile screens, stack vertically */
+@media (max-width: 768px) {
+  .benefits-section {
+    flex-direction: column;
+  }
+
+  .image-container-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container {
+    max-width: 100%;
+  }
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideBadgeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Apply animations to elements */
+header h1 {
+  animation: fadeIn 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.1s;
+}
+
+.download-button {
+  animation: scaleIn 0.5s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.8s;
+}
+
+.benefits-section {
+  animation: fadeIn 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.3s;
+}
+
+.benefit-card {
+  animation: slideUp 0.7s ease-out forwards;
+  opacity: 0;
+}
+
+.benefit-card:nth-child(1) {
+  animation-delay: 0.4s;
+}
+
+.benefit-card:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.benefit-card:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+.section-maintitle {
+  animation: slideIn 0.7s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+
+.image-container {
+  animation: scaleIn 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.image-container:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.image-container:nth-child(2) {
+  animation-delay: 0.7s;
+}
+
+.image-container:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+.price-display {
+  animation: slideInRight 0.9s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.5s;
+}
+
+section p {
+  animation: fadeIn 0.8s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.3s;
+}
+
+/* Ensure animation properties don't interfere with other styles */
+header h1,
+.download-button,
+.benefits-section,
+.benefit-card,
+.section-maintitle,
+.image-container,
+.price-display,
+section p {
+  will-change: opacity, transform;
+}
+
+/* Header layout for title and sign out button */
+.header-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* Sign out button styling */
+.sign-out-button {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 400;
+  transition: all 0.2s ease;
+}
+
+.sign-out-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* On hover effects for interactive elements */
+.download-button:hover {
+  background-color: #ffffff1a;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+/* Add a subtle animation for images on hover */
+.image-container:hover img {
+  transform: scale(1.03);
+  transition: transform 0.4s ease;
+}
