@@ -124,7 +124,52 @@ section {
 .footer-links a:hover {
   color: #60a3e6;
 }
-  
+
+  @media (max-width: 600px) {
+  body {
+    padding: 1rem;
+    height: auto; /* Allow content to grow */
+    overflow: auto; /* Enable scrolling if needed */
+    align-items: flex-start; /* Align content to the top */
+  }
+
+  main {
+    width: 100%;
+    padding: 1.5rem 1rem;
+  }
+
+  .storebutton {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .icon-container {
+    align-items: stretch;
+  }
+
+  .register-button,
+  .about-style-button {
+    font-size: xx-small;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .section-maintitle {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  p {
+    font-size: 0.8rem;
+    text-align: justify;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+  }
+}
 </style>
     
   </head>
